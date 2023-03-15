@@ -3,7 +3,7 @@
  <head>
     <title> Maquette Booki </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/d6d6c0fc99.css" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,10 +12,21 @@
 </head>
    <body>
    <header> 
+    <div class="conteneur_logo_et_menu">
     <img class="Booki"
     src="images/Booki.png"   
     alt="Logo Booki"
     width="400" height="340">
+    <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="#Hebergement_a_Marseille">Hébergements</a></li>
+            <li><a href="#Activites_a_Marseille">Activités</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
 
 <!--Section recherche de logements-->
 
@@ -30,11 +41,14 @@
     </form>
     <div class="filtres"> 
         <h3>Filtres</h3>
+        <div class="filtres_button"> 
         <button><i class="fas fa-money-bill-wave"></i><a> Economique</a></button>
         <button><i class="fas fa-child"></i><a> Familial</a></button>
         <button><i class="fas fa-heart"></i><a> Romantique</a></button>
         <button><i class="fas fa-dog"></i><a> Animaux Autorisés</a></button>
+        </div>
     </div>
+
 
     <div class="info">
         <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -130,7 +144,7 @@
             </div>
         </a>
     </div>
-    <a href=""><h5>Afficher plus</h5></a>
+    <a><h5>Afficher plus</h5></a>
 </section>
 
 <!-------Populaires-------->
@@ -182,8 +196,8 @@
         </div>
     </div>
     </a>
-</div>
         </aside>
+</div>
 
 
 <!-------Activités à Marseille-------->
