@@ -299,16 +299,22 @@ margin-top: 0px;
     grid-column-start:1;
     grid-column-end: 3;    
     background-color: white;
-    margin: 20px;
 }
 
 #ancre1{
 margin: 20px;
 }
+#ancre2{
+    margin: 20px;
+    }
+#ancre3{
+        margin: 30px;
+        }
 .Activités {
     display: flex;
     flex-direction: row;
-    width: 97%;
+    width: 95%;
+    margin:0px
 }
 
 .imgAct {
@@ -344,10 +350,11 @@ margin: 20px;
     
 }
 
-.textPop2 {
-width: 90%;
+div.textPop2 {
+width: 100%;
 text-align:left;
-padding-left: 5%
+padding-left: 5%;
+font-weight: bold;
 }
     
 
@@ -367,6 +374,7 @@ padding-left: 5%
     grid-column-end: 3;
     margin-right: 30px ;
     width: 88%;
+
   }
   .footer1{
     display: grid;
@@ -474,7 +482,7 @@ margin: 0px;
 .imgAct img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    width: 100%;
+    width: 350px;
     height: 150px;
 }
 .imgAct{
