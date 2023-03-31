@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 <link rel="stylesheet" href="https://kit.fontawesome.com/d6d6c0fc99.css" crossorigin="anonymous">
 
-p,h1,h2,h3,h4,h5,h6     {
+p,h1,h2,h3,h4,h5,h6     
+{
     font-family: raleway, sans-serif;
 }
+
+body {
+	margin: auto;
+	max-width: 1400px;
+	padding: 0 0px;
+}
+
 
 .fa-star {
     color: #0065FC;
     padding-block-end: 10px;  }
+
+.fa-chart-line {
+    color: #0065FC; 
+    margin: 55px 0px 0px 90px;
+}
+    
+.block{
+    display: flex;
+    flex-direction: row;
+}
 
   .grey{
     color: white;
@@ -19,6 +37,24 @@ p,h1,h2,h3,h4,h5,h6     {
 	flex-direction: row;
 	align-items: center;
     margin-top: -5px;
+}
+.rating2 {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    margin-top:40px;
+}
+.rating3 {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    margin-top:60px;
+}
+.rating4 {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    margin-top:60px;
 }
 
 .ligne1{
@@ -54,7 +90,7 @@ p,h1,h2,h3,h4,h5,h6     {
     text-decoration : none;
     margin : 30px;
     color : inherit;
-    padding : 20px;
+    padding : 10px;
   }
   
   li a:hover{
@@ -241,17 +277,16 @@ header {
  .aside {
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px; 
+    margin: 20px 30px;
+    border-radius: 20px;
     background-color: gainsboro;
-    width: 330px;
 }
 .populaires {
+
     display: grid;
-    grid-row: auto;
-    margin: 3px;
+    margin: -40px 0px 0px 0px;
     gap: 5px;
+    justify-content: space-evenly;
 }
 
 .imgHebergement:hover, .imgPop:hover {
@@ -305,16 +340,16 @@ margin-top: 0px;
 margin: 20px;
 }
 #ancre2{
-    margin: 20px;
+    margin: 50px 30px;
     }
 #ancre3{
         margin: 30px;
         }
-.Activités {
+.Activites {
     display: flex;
     flex-direction: row;
-    width: 95%;
-    margin:0px
+    width: 100%;
+    margin: 0px 0px;
 }
 
 .imgAct {
@@ -362,18 +397,19 @@ font-weight: bold;
  /******** Footer ******/
 
  footer{
+
     background-color: #F2F2F2;
-    margin-left : 30px;
-    margin-right : -30px;
-    padding-left : 50px;
-    padding-right: 30px;
-    padding-top : 2%;
-    padding-bottom : 2%;
-    display : grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-right: 30px ;
-    width: 88%;
+    margin-left: 30px;
+    /* margin-right: -30px; */
+    padding-left: 50px;
+    /* padding-right: 30px; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: grid;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+    margin-right: 30px;
+    /* width: 88%;*/
 
   }
   .footer1{
@@ -410,6 +446,7 @@ font-weight: bold;
 
 
  @media all and (max-width : 767px)
+ 
 
 {
     .container {
@@ -417,65 +454,119 @@ font-weight: bold;
         flex-direction: column-reverse;
 
     }
-footer {
+    footer {
     display: flex;
     flex-direction: column;
-    margin: -10px;
-    margin-right: 30px;
+    margin: 0px;
     padding-top: 12%;
 
-}
+    }
+    header{
+        width:100%;
+      }
+      header nav ul{
+        padding : 0px;
+        margin-left : -4%;
+        width : 109%;
+      }
+    
+      .menu{
+        width : 100%;
+      }
+      header div ul li{
+        margin-left : 0px;
+        width : 50%;
+        text-align: center;
+        margin-bottom:0px;
+        padding-bottom:4%;
+      }
+    
+      header div ul li:hover{
+        border-bottom: blue;
+      }
+    
+      header div ul li a{
+        margin-left : 0px;
+        margin-right : 0px;
+        width : 100%;
+        height:100%;
+        display:inline-block;
+        margin: 0px 0px 0px -50px;
+        padding : 0 0 6% 0;
+        border-bottom : 4px #80808036 solid;
+      }
+      header div ul li a:active, header div ul li a:hover{
+    
+        border-top : none;
+      }
+    
+    h1{
+    width: 300px;
+    size: 3Opx  ;
+    margin-left:20px
+    }
+      header div ul li a:hover{
+        border-bottom:4px blue solid;
+        padding-bottom:6%;
+        color:#0065FC;
+      }
+    
+      header div h3{
+        font-size : 140%;
+      }
+      header div h5{
+        font-size : 100%;
+        padding-bottom : 5%;
+      }
+    .hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+    #ancre1 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        margin-left: 30px;
 
-div ul {
-    width: auto;
-}
-.hebergements{
-    display: flex;
-    flex-direction: column;
+    }
+    .Activites {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: -7px;
+        margin-bottom: 70px;
+        margin: 0px -100px 0px  0px;
 
-}
-#ancre1 {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-.Activités {
+    }
+    .Booki{
+        overflow: hidden;
+        width: 70px;
+        height: 25px;
+        margin: 20px 0px 20px 130px;
+    }
+    .conteneur_logo_et_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .filtres{
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-left: -7px;
-    margin-bottom: 70px;
+    margin: 0px;
 
+    }
 
-}
-.Booki{
-overflow: hidden;
-width: 61.09px;
-height: 15px;
-margin: 0px;
-margin-top: 20px;
-}
-.conteneur_logo_et_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-
-}
-.filtres{
-display: grid;
-margin: 0px;
-
-
-}
-.info i {
-
-}
 .filtres_button {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-left: -10%;
+    gap: 10px 0px;
+    margin-left: -5%;
+
 }
+.filtres button {
+    height: 50px;
+    margin-left: 30px;
+    width: 150px;
+}
+
 
      /******** Les plus Populaires Mobile ******/
 
@@ -486,25 +577,28 @@ margin: 0px;
     height: 150px;
 }
 .imgAct{
-display: flex;
-flex-direction: column;
-width: 70%;
-background-color: white;
-border-radius: 20px;
-text-decoration: none;
-color: black;
-box-shadow: 3px 4px 3px 1px rgb(196 196 196 / 54%);
-margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 4px 3px 1px rgb(196 196 196 / 54%);
+    margin: 20px;
 }
 h3 {
     display: block;
-    margin-right: 60px;
-
+    margin-left: 20px;
+margin-bottom: 5px;
+}
+form{
+    margin-left:40px;
 }
 .section2{
 
     background-color: white;
-    margin-left: -30px;
+    margin-left: -25px;
 
 }
 .imgHebergement {
@@ -515,7 +609,6 @@ h3 {
 }
 h4 {
     padding: 0%;
-
 }
 
 .imgHebergement h4 {
@@ -527,20 +620,17 @@ h4 {
 }
 .rating {
     margin-top: -10px;
-
 }
 p {
     margin-top: -10px;
     size: 16px;
-
-
+    margin-left:0px
 }
 .aside
 {
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 20px;
-    margin: -20px;
+    margin: 0px;
     background-color: gainsboro;
     width: 100%;
     border-radius: 0%;
@@ -561,7 +651,49 @@ p {
     padding: 30px;
     padding-bottom: 0px;
 }
+div.textPop2 {
+    text-align: left;
+    padding-left: 5%;
+    font-weight: bold;
+    margin-right: 80px;
+    width: 350px;
+    padding-left: 30px;
+    padding-right: 0px;
+
+
 }
+.info {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;}
+
+    .info i{
+        margin-bottom: 30px;
+
+    }
+
+    .searchM {
+        display: flex;
+        flex-direction: row;
+        background-color: #0065FC;
+        color: white;
+        padding: 2.1px 12px 2px 12px;
+        border: 1px solid #0065FC;
+        border-radius: 0 12px 12px 0;
+        margin-left: 198px;
+        margin-top: -39px;
+        cursor: pointer;
+        height: 39px;
+        align-items: center;
+
+    }
+
+
+.searchD {
+    display : none
+}
+}
+
 
      /******** Version Tablette ******/
 
@@ -576,8 +708,46 @@ p {
     display: flex;
     flex-direction: row;
 }
+
+.fa-chart-line {
+    color: #0065FC; 
+    margin: 20px -400px 0px 450px;
+}
+.hebergements {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .imgHebergement {
-    width: 210px;
+    width: 200px;
+    height: 160px;
+    margin: 10px;
+}
+.imgHebergement h4  {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 0.5rem;
+    margin-left: 4px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+}
+.section2 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: gainsboro;
+}
+h5 {
+    margin: 30px 0px 10px 20px;
 }
 div ul {
     width: auto;
@@ -586,10 +756,17 @@ div ul {
     flex-wrap: nowrap;
 
 }
+#ancre2 {
+    margin: 10px 0px 50px 20px;
+}
+.imgPop{
+    height: 130px;
+    width: 300px;
+}
 
 .imgPop img {
     width: 100px;
-    height: 150px;
+    height: 130px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
 }
@@ -604,18 +781,67 @@ div ul {
     width: 100%;
 
 }
+
+.textPop h4 {
+    font-weight: 14px;
+    margin-top: 0px;
+    font-size: small;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: small;
+
+}
+.rating3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left:-5px}
+
+    .rating4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        margin-left:-5px}
+
+.rating2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        margin-left:-5px
+}
+
 footer
 {
     background-color: #F2F2F2;
-    margin-left : 30px;
-    margin-right : -30px;
-    padding-left : 50px;
-    padding-right: 30px;
-    padding-top : 2%;
-    padding-bottom : 2%;
-    display : grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 83%;
 }
-     }
+
+.imgAct img {
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: fill;
+    border-spacing: 5px;
+}
+
+
+
+body {
+    margin: auto;
+    max-width: 1400px;
+    margin: 0px 0px 10px 0px;
+    }
+}
