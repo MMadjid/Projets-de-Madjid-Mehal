@@ -5,14 +5,14 @@
 p,h1,h2,h3,h4,h5,h6     
 {
     font-family: raleway, sans-serif;
+    font-weight: 600;
 }
 
 body {
 	margin: auto;
-	max-width: 1400px;
+	max-width: 1440px;
 	padding: 0 0px;
 }
-
 
 .fa-star {
     color: #0065FC;
@@ -26,6 +26,8 @@ body {
 .block{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;      /*modif*/
+    width: 90%;       /*modif*/
 }
 
   .grey{
@@ -42,19 +44,19 @@ body {
     display: flex;
 	flex-direction: row;
 	align-items: center;
-    margin-top:40px;
+    margin-top: 20%;     /*modif*/
 }
 .rating3 {
     display: flex;
 	flex-direction: row;
 	align-items: center;
-    margin-top:60px;
+    margin-top: 25%;      /*modif*/
 }
 .rating4 {
     display: flex;
 	flex-direction: row;
 	align-items: center;
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 .ligne1{
@@ -70,7 +72,7 @@ body {
     height: 19px;
     left: 0px;
     top: 0px;
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
  }
  .conteneur_logo_et_menu{
     display : flex;
@@ -145,7 +147,7 @@ header {
     flex-wrap: wrap;
     align-items: center; 
     margin: 25px 0 25px 0;
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
  }
  .filtres_button     {
      display: flex;
@@ -187,7 +189,7 @@ header {
  .info {
      display: flex;
      flex-direction: row;
-     margin: 20px;
+     margin: 20px 20px 20px 0px;
     align-items: center;
 
  }
@@ -210,9 +212,9 @@ header {
 
 
  .container {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: flex;
+    justify-content: space-around;
+ 
 }
  /******** Hébergements ******/
 
@@ -221,9 +223,9 @@ header {
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 20px;
-    margin: 20px;
     border-radius: 20px; 
     background-color: gainsboro;
+    width: 60%;
 }
 
 
@@ -236,7 +238,7 @@ header {
 }
 
 .imgHebergement {
-    width: 250px;
+    width: 94%;         /*modif*/
     height: 250px;
     background-color: white;
     padding: 2px;
@@ -260,6 +262,7 @@ header {
     font-weight: bold;
     line-height: 0.5rem;
     margin-left: 4px;
+    
 }
 
 .imgHebergement p, .rating {
@@ -271,15 +274,15 @@ header {
 }
 
 
-
  /******** Populaires ******/
 
  .aside {
     grid-column-start: 2;
     grid-column-end: 3;
-    margin: 20px 30px;
+    /*margin: 20px 30px;*/            /*modif*/
     border-radius: 20px;
     background-color: gainsboro;
+    width: 30%;
 }
 .populaires {
 
@@ -297,8 +300,8 @@ header {
 .imgPop {
     display: flex;
     flex-direction: row;
-    min-width: 200px;
-    max-width: 350px;
+    /*min-width: 200px;
+    max-width: 350px;*/
     height: 150px;
     background-color: white;
     padding: 3px;
@@ -306,12 +309,14 @@ header {
     border-radius: 20px;
     text-decoration: none;
     color: black;
+    width: 90%;             /*modif*/
+    margin-left: 4%;        /*modif*/
 }
 
 
 .imgPop img {
 
-width: 150px;
+width: 40%;
 height: 150px;
 border-radius: 20px 0 0 20px ;
 object-fit: cover;
@@ -400,16 +405,11 @@ font-weight: bold;
 
     background-color: #F2F2F2;
     margin-left: 30px;
-    /* margin-right: -30px; */
     padding-left: 50px;
-    /* padding-right: 30px; */
     padding-top: 2%;
     padding-bottom: 2%;
     display: grid;
-    /* grid-column-start: 1; */
-    /* grid-column-end: 3; */
     margin-right: 30px;
-    /* width: 88%;*/
 
   }
   .footer1{
@@ -418,23 +418,23 @@ font-weight: bold;
     grid-column-end: 1;
   }
   .footer2{
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
   }
   .footer3{
-    display: grid;
+    display: flex;
     grid-column-start: 2;
     grid-column-end: 3;
+    flex-direction: column;
   }
   div ul{
     list-style-type:none;
-    width : 330px;
   }
   
   div ul li{
-    margin-left : -40px;
-    margin-bottom : 4%;
+    margin-left: -40px;
+    margin-bottom: 10%;
+    margin-top: -10px;
   }
   
   footer div p{
@@ -459,10 +459,17 @@ font-weight: bold;
     flex-direction: column;
     margin: 0px;
     padding-top: 12%;
+    margin-left: -20px;
+
+
+    }
+    li{
+        margin-top: 0px;
 
     }
     header{
-        width:100%;
+        width:90%;     
+        margin-left:0px
       }
       header nav ul{
         padding : 0px;
@@ -478,7 +485,6 @@ font-weight: bold;
         width : 50%;
         text-align: center;
         margin-bottom:0px;
-        padding-bottom:4%;
       }
     
       header div ul li:hover{
@@ -502,8 +508,7 @@ font-weight: bold;
     
     h1{
     width: 300px;
-    size: 3Opx  ;
-    margin-left:20px
+    size: 30px;
     }
       header div ul li a:hover{
         border-bottom:4px blue solid;
@@ -528,6 +533,12 @@ font-weight: bold;
         margin-left: 30px;
 
     }
+    #ancre2 {
+        margin: 50px 10px;
+        margin-right: 0px;
+
+    }
+
     .Activites {
         display: grid;
         grid-column-start: 1;
@@ -559,11 +570,12 @@ font-weight: bold;
     grid-template-columns: 1fr 1fr;
     gap: 10px 0px;
     margin-left: -5%;
-
+    margin: 0px;
 }
+
 .filtres button {
     height: 50px;
-    margin-left: 30px;
+    margin-left: 0px;
     width: 150px;
 }
 
@@ -579,7 +591,7 @@ font-weight: bold;
 .imgAct{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 89%;                /*modif*/
     background-color: white;
     border-radius: 20px;
     text-decoration: none;
@@ -589,11 +601,11 @@ font-weight: bold;
 }
 h3 {
     display: block;
-    margin-left: 20px;
+    margin-left: 0px;
 margin-bottom: 5px;
 }
 form{
-    margin-left:40px;
+    margin-left:0px;
 }
 .section2{
 
@@ -624,7 +636,6 @@ h4 {
 p {
     margin-top: -10px;
     size: 16px;
-    margin-left:0px
 }
 .aside
 {
@@ -656,9 +667,11 @@ div.textPop2 {
     padding-left: 5%;
     font-weight: bold;
     margin-right: 80px;
-    width: 350px;
+    width: 70%;                  /*modif*/
     padding-left: 30px;
     padding-right: 0px;
+    margin-left: -20px;
+
 
 
 }
@@ -680,19 +693,43 @@ div.textPop2 {
         padding: 2.1px 12px 2px 12px;
         border: 1px solid #0065FC;
         border-radius: 0 12px 12px 0;
-        margin-left: 198px;
+        margin-left: 287px;
         margin-top: -39px;
         cursor: pointer;
         height: 39px;
         align-items: center;
 
     }
-
+    input {
+        border: 1px solid #F2F2F2;
+        height: 35px;
+        width: 240px;
+        padding-left: 7px;
+        outline: none;
+    }
 
 .searchD {
     display : none
 }
+
+div ul li {
+    margin-left: -40px;
+    margin-bottom: 10%;
+    margin-top: -20px;
+
 }
+
+
+.info{
+    margin-left: -10px;
+}
+h5
+{
+    margin: 50px 0 0 30px;
+}
+}
+
+
 
 
      /******** Version Tablette ******/
@@ -700,6 +737,20 @@ div.textPop2 {
 
      @media all and (max-width : 991px) and (min-width : 767px)
      {
+        header {
+            padding-left: 20px;
+            margin-left: 0px;
+        }
+        .Booki{
+        margin: 20px 0px 20px 0px;
+        }
+        .filtres{
+            margin-left: 0px;
+
+        }
+        .info{
+            margin-left:0px;
+        }
     .container {
         display: flex;
         flex-direction: column;
@@ -711,7 +762,8 @@ div.textPop2 {
 
 .fa-chart-line {
     color: #0065FC; 
-    margin: 20px -400px 0px 450px;
+    /*margin: 20px -400px 0px 450px;*/
+    margin-top: 3%;     /*modif*/
 }
 .hebergements {
     display: grid;
@@ -745,6 +797,11 @@ div.textPop2 {
     margin: 20px;
     border-radius: 20px;
     background-color: gainsboro;
+    width: 91%;    /*modif*/
+}
+.block{
+    justify-content: space-between;    /*modif*/
+    width: 100%;     /*modif*/
 }
 h5 {
     margin: 30px 0px 10px 20px;
@@ -765,7 +822,7 @@ div ul {
 }
 
 .imgPop img {
-    width: 100px;
+    width: 40%;    /*modif*/
     height: 130px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -775,7 +832,7 @@ div ul {
     margin: 20px;
     border-radius: 20px;
     background-color: gainsboro;
-    width: 90%;
+    width: 91%;    /*modif*/
 }
 .aside2{
     width: 100%;
@@ -840,8 +897,7 @@ footer
 
 
 body {
-    margin: auto;
     max-width: 1400px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 5px 0px 0px;
     }
 }
