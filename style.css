@@ -101,7 +101,7 @@ body {
   }
 
 header {
-    padding-left: 20px;
+    margin-left: 30px;
 }
  ********** Recherche de logement **********/
 
@@ -739,7 +739,7 @@ h5
      {
         header {
             padding-left: 20px;
-            margin-left: 0px;
+            margin-left: 10px;
         }
         .Booki{
         margin: 20px 0px 20px 0px;
