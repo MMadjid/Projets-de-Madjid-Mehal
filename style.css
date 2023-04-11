@@ -26,8 +26,8 @@ body {
 .block{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;      /*modif*/
-    width: 90%;       /*modif*/
+    justify-content: space-around;      
+    width: 90%;       
 }
 
   .grey{
@@ -44,13 +44,13 @@ body {
     display: flex;
 	flex-direction: row;
 	align-items: center;
-    margin-top: 20%;     /*modif*/
+    margin-top: 20%;     
 }
 .rating3 {
     display: flex;
 	flex-direction: row;
 	align-items: center;
-    margin-top: 25%;      /*modif*/
+    margin-top: 25%;      
 }
 .rating4 {
     display: flex;
@@ -238,7 +238,7 @@ header {
 }
 
 .imgHebergement {
-    width: 94%;         /*modif*/
+    width: 94%;         
     height: 250px;
     background-color: white;
     padding: 2px;
@@ -279,7 +279,7 @@ header {
  .aside {
     grid-column-start: 2;
     grid-column-end: 3;
-    /*margin: 20px 30px;*/            /*modif*/
+    /*margin: 20px 30px;*/            
     border-radius: 20px;
     background-color: gainsboro;
     width: 30%;
@@ -309,8 +309,8 @@ header {
     border-radius: 20px;
     text-decoration: none;
     color: black;
-    width: 90%;             /*modif*/
-    margin-left: 4%;        /*modif*/
+    width: 90%;             
+    margin-left: 4%;        
 }
 
 
@@ -345,7 +345,7 @@ margin-top: 0px;
 margin: 20px;
 }
 #ancre2{
-    margin: 50px 25px;    /*modif*/
+    margin: 50px 25px;   
     }
 #ancre3{
         margin: 30px;
@@ -469,11 +469,11 @@ font-weight: bold;
     }
     header{
         width:90%;     
-        margin-left:0px
-      }
+        margin-left: 20px;
+    }
       header nav ul{
         padding : 0px;
-        margin-left : -5%;      /*modif*/
+        margin-left : -5%;      
         width : 109%;
       }
     
@@ -500,7 +500,7 @@ font-weight: bold;
         margin: 0px 0px 0px -50px;
         padding : 0 0 6% 0;
         border-bottom : 4px #80808036 solid;
-        margin-left: 1%;    /*modif*/
+        margin-left: 1%;    
       }
       header div ul li a:active, header div ul li a:hover{
     
@@ -534,7 +534,7 @@ font-weight: bold;
 
     }
     #ancre2 {
-        margin: 50px 10px;
+        margin: 50px 20px;
         margin-right: 0px;
 
     }
@@ -591,7 +591,7 @@ font-weight: bold;
 .imgAct{
     display: flex;
     flex-direction: column;
-    width: 89%;                /*modif*/
+    width: 89%;                
     background-color: white;
     border-radius: 20px;
     text-decoration: none;
@@ -667,7 +667,7 @@ div.textPop2 {
     padding-left: 5%;
     font-weight: bold;
     margin-right: 80px;
-    width: 70%;                  /*modif*/
+    width: 70%;                 
     padding-left: 30px;
     padding-right: 0px;
     margin-left: -20px;
@@ -721,7 +721,7 @@ div ul li {
 
 
 .info{
-    margin-left: -10px;
+    margin-left: 0px;
 }
 h5
 {
@@ -763,7 +763,7 @@ h5
 .fa-chart-line {
     color: #0065FC; 
     /*margin: 20px -400px 0px 450px;*/
-    margin-top: 3%;     /*modif*/
+    margin-top: 3%;     
 }
 .hebergements {
     display: grid;
@@ -797,11 +797,11 @@ h5
     margin: 20px;
     border-radius: 20px;
     background-color: gainsboro;
-    width: 91%;    /*modif*/
+    width: 91%;    
 }
 .block{
-    justify-content: space-between;    /*modif*/
-    width: 100%;     /*modif*/
+    justify-content: space-between;    
+    width: 100%;     
 }
 h5 {
     margin: 30px 0px 10px 20px;
@@ -822,7 +822,7 @@ div ul {
 }
 
 .imgPop img {
-    width: 40%;    /*modif*/
+    width: 40%;    
     height: 130px;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
@@ -832,7 +832,7 @@ div ul {
     margin: 20px;
     border-radius: 20px;
     background-color: gainsboro;
-    width: 91%;    /*modif*/
+    width: 91%;   
 }
 .aside2{
     width: 100%;
@@ -857,21 +857,21 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 0px;    /*modif*/
+    margin-top: 0px;    
     margin-left:-5px}
 
     .rating4 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 0px;    /*modif*/
+        margin-top: 0px;    
         margin-left:-5px}
 
 .rating2 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 0px;    /*modif*/
+        margin-top: 0px;    
         margin-left:-5px
 }
 
