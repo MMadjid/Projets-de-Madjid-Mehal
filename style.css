@@ -95,11 +95,14 @@ body {
     margin : 30px;
     color : inherit;
     padding : 10px;
+    padding-top:32px;
   }
   
   li a:hover{
     border-top : 4px blue solid;
     color : #408bfd;
+
+
   }
 
 header {
@@ -109,9 +112,7 @@ header {
 
  
  .section1 {
-     grid-column: span 2;
-     grid-row: 2;
-     margin: 0px 40px 0px 40px;
+    margin: 0px 40px 0px 40px;
  }
  
  .fa-map-marker-alt {
@@ -330,7 +331,6 @@ margin: 10px 0 0 10px;
 }
 
 .textPop h4 {
-font-weight : 14px;
 line-height : 1.2rem;
 margin-top : 0px;
 }
@@ -408,30 +408,32 @@ font-weight: bold;
  /******** Footer ******/
 
  footer{
-
+    display: flex;
+    justify-content: flex-start;
     background-color: #F2F2F2;
     margin-left: 30px;
     padding-left: 50px;
     padding-top: 2%;
     padding-bottom: 2%;
-    display: grid;
     margin-right: 30px;
 
   }
   .footer1{
-    display: grid;
-    grid-column-start: 0;
-    grid-column-end: 1;
+    display: flex;
+    flex-direction :column;
+    width: 35%;
+
   }
   .footer2{
     display: flex;
     flex-direction: column;
+    width: 32%;
+
   }
   .footer3{
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
     flex-direction: column;
+
   }
   div ul{
     list-style-type:none;
@@ -446,8 +448,7 @@ font-weight: bold;
   footer div p{
     font-weight: bold;
   }
-
-
+  
  /******** Version Mobile ******/
 
 
@@ -513,9 +514,7 @@ font-weight: bold;
         border-top : none;
       }
     
-    h1{
-    resize: 30px;
-    }
+  
       header div ul li a:hover{
         border-bottom:4px blue solid;
         padding-bottom:6%;
@@ -641,7 +640,6 @@ h4 {
 }
 p {
     margin-top: -10px;
-    resize: 16px;
 }
 .aside
 {
@@ -720,12 +718,28 @@ div.textPop2 {
 
 div ul li {
     margin-left: -40px;
-    margin-bottom: 10%;
-    margin-top: -20px;
+    margin-bottom: 5%;
 
 }
+.footer1{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+.footer3{
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+div ul{
+    margin-bottom: 15%;
 
-
+}
 .info{
     margin-left: 0px;
 }
@@ -916,7 +930,6 @@ div ul {
 }
 
 .textPop h4 {
-    font-weight : 14px;
     margin-top: 0px;
     font-size: small;
 }
@@ -926,6 +939,9 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
+}
+.populaires p {
     font-size: small;
 
 }
@@ -958,9 +974,7 @@ footer
     margin-right: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
+
 }
 
 .imgAct img {
